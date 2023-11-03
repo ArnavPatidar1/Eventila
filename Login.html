@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventila Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        * {
+            background-color: #fed5af;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .login-container {
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            display: table
+        }
+
+        .login-wrapper {
+            padding: 40px;
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .login-logo-wrapper {
+            text-align: center;
+        }
+
+        .login-logo {
+            height: 60px;
+            display: inline-block;
+            margin-bottom: 1.5em;
+        }
+
+        .login-info {
+            background-color: #fcca98;
+            text-align: center;
+            margin-left: 500px;
+            margin-right: 500px;
+            border: black solid;
+            border-radius: 15px;
+        }
+
+        .bgcolor{
+            background-color: #fcca98;
+        }
+
+        #username, #password{
+            background-color: #fcca98;
+            height: 40px;
+            width: 290px;
+            font-size: 15px;
+            border: black solid;
+            border-radius: 15px;
+            text-indent: 20px;
+        }
+        .forgot_password{
+            color: rgb(48, 218, 48);
+            background-color: #fcca98;
+            font-weight: 600;
+        }
+        .forgot_password:hover{
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        main div{
+            padding: 15px;
+            background-color: #fcca98;
+        }
+        footer div{
+            padding: 15px;
+            background-color: #fcca98;
+        }
+        footer p{
+            background-color: #fcca98;
+        }
+        button{
+            background-color: rgb(244, 34, 76);
+            color: white;
+            font-size: 20px;
+            width: 250px;
+            border: white ;
+            display: inline-block;
+            border-radius: 250px;
+        }
+        button:hover{
+            background-color: rgb(224, 5, 5);
+            cursor:pointer;
+        }
+        #or{
+
+            background-color: #fcca98;
+            display: flex;
+            flex-direction: row;
+        }
+        #or::before, #or::after{
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid #6a6868;
+            margin: auto;
+        }
+        #orspan{
+            background: #fff;
+            padding: 0 10px;
+        }
+        .new{
+            font-weight: 600;
+            color: #555555;
+        }
+        .new:hover{
+            cursor: pointer;
+            color: #121212;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-wrapper">
+            <div class="login-logo-wrapper">
+                <img class="login-logo" src="images/Eventila logo.png">
+            </div>
+            <div class="login-info bgcolor">
+                <header class="bgcolor">
+                    <h1 class="bgcolor">Welcome</h1>
+                    <div  style="margin: 0%;">
+                            <p class="bgcolor">Sign in to Eventila</p>
+                    </div>
+                </header>
+                <main>
+                    <form action="Home2.html" target="_blank" method="post">
+                        
+                    <div>
+                        <input type="email" id="username" name="username" placeholder="E-mail address"  required autofocus> 
+                    </div>
+                    <div>
+                        <input type="password" id="password" name="password" required placeholder="Password">
+                        <div>
+                            <span class="forgot_password">Forgot Password</span>
+                        </div>
+                    </div>
+                    <div style="padding: 20px;">
+                        <button type="submit" value="default" id="button"  name="action">
+                            Continue
+                        </button>
+                    </div>
+                    </form>
+                </main>
+                <footer>
+                    <div id="or">
+                        <span id="orspan">OR</span>
+
+                    </div>
+                    <div>
+                        <a href="New_user.html" target="_blank">
+                            <p class="new">
+                                Create New Account
+                            </p>
+
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
